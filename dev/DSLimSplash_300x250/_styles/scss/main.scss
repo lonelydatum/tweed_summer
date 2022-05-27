@@ -1,0 +1,56 @@
+@import '../../../_common/styles/common.scss';
+
+#banner{
+ width: 300px;
+ height: 250px;
+}
+
+#olg{
+	width: 136px;
+	height: 69px;
+	@include pos(0, 188);
+}
+
+.scale{
+	transform-origin: 50% 50%;
+}
+
+#legalBtn{	
+	@include pos(150, 204);	
+	width: 80px;
+	// opacity: 1;
+
+}
+
+
+.t2{
+	// @include pos-scale(0, 0, .5);
+}
+
+.t1{
+	@include pos-scale(-66, -38, .5);
+}
+
+
+
+._swirl{
+	@include pos-scale(195, 4, .5);
+}
+._lime-bottom{
+	@include pos-scale(249, 111, .5);
+}
+._lime-top{
+	@include pos-scale(250, 47, .5);
+}
+._lemon-top{
+	@include pos-scale(232, -9, .5);
+}
+._lemon-ring{
+	@include pos-scale(254, 85, .5);
+}
+._lemon-left{
+	@include pos-scale(147, 72, .5);
+}
+._lemon_main{
+	@include pos-scale(143, -18, .5);
+}
