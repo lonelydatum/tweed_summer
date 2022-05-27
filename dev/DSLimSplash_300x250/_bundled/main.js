@@ -5,12 +5,19 @@ var _commonJsCommonJs = require('../../_common/js/common.js');
 
 function start() {
 
-	var tl = (0, _commonJsCommonJs.init)();
+	var tl = new TimelineMax({ onComplete: function onComplete() {} });
+
+	tl.set(".frame1", { opacity: 1 });
 
 	tl.from(".bg", { duration: .4, opacity: 0, ease: Power3.easeIn });
 	tl.from(".hand", { duration: .3, x: "+=130", ease: Power3.easeOut });
-	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: Back.easeOut });
-	tl.from(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .4, scale: 0, ease: Back.easeOut });
+	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: Back.easeOut, onComplete: function onComplete() {
+			console.log('lkj');
+			TweenLite.to(["._swirl", "._lime-bottom", "._lime-top"], { duration: .3, yoyo: true, repeat: 8, ease: Linear.easeNone, rotation: "+=11" });
+		} });
+	tl.from(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .4, scale: 0, ease: Back.easeOut, onComplete: function onComplete() {
+			TweenLite.to(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .3, yoyo: true, repeat: 8, ease: Linear.easeNone, rotation: "+=11" });
+		} });
 	tl.from(["._lemon-main"], { duration: .4, scale: 0, ease: Back.easeOut });
 
 	tl.from(".t1", { duration: .65, scale: 1, opacity: 0, ease: Back.easeIn });
@@ -40,14 +47,6 @@ var w = size.w;
 var h = size.h;
 
 function init() {
-
-	var tl = new TimelineMax({ onComplete: function onComplete() {
-			if (document.getElementById("legalBtn")) {
-				TweenLite.set("#legalBtn", { display: "block" });
-			}
-		} });
-
-	tl.set(".frame1", { opacity: 1 });
 
 	return tl;
 }
