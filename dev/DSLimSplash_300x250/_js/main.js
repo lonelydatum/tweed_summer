@@ -21,7 +21,7 @@ function start(){
 	tl.set(".frame1", {opacity:1})
 
 	
-	
+	tl.from(".t1", {duration:.65, scale:1.5, opacity:0, ease:Back.easeIn})
 
 
 	tl.from(".bg", {duration:.4, opacity:0, ease:Power3.easeIn})
@@ -41,7 +41,7 @@ function start(){
 
 	
 
-	tl.from(".t1", {duration:.65, scale:1, opacity:0, ease:Back.easeIn})
+	
 	tl.from(".cta", {duration:.3, opacity:0, ease:Power3.easeOut}, "+=.3")
 
 
