@@ -22,7 +22,7 @@ function start() {
 		} });
 	tl.from(["._lemon-main"], { duration: .4, scale: 0, ease: "custom" });
 
-	tl.to(".t1", { duration: .2, opacity: 0, ease: Power3.easeOut }, 4);
+	tl.to(".t1", { duration: .2, opacity: 0, ease: Power3.easeOut }, 4.3);
 	tl.from(".t2", { duration: .65, scale: 1.5, opacity: 0, ease: "custom" });
 
 	tl.from(".cta", { duration: .3, opacity: 0, ease: Power3.easeOut }, "+=.3");
