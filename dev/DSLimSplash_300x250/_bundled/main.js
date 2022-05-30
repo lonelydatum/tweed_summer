@@ -13,14 +13,17 @@ function start() {
 
 	tl.from(".bg", { duration: .4, opacity: 0, ease: Power3.easeIn });
 	tl.from(".hand", { duration: .3, x: "+=130", ease: Power3.easeOut });
-	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: Back.easeOut, onComplete: function onComplete() {
+	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
 			console.log('lkj');
 			TweenLite.to(["._swirl", "._lime-bottom", "._lime-top"], { duration: .3, yoyo: true, repeat: 8, ease: Linear.easeNone, rotation: "+=11" });
 		} });
-	tl.from(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .4, scale: 0, ease: Back.easeOut, onComplete: function onComplete() {
+	tl.from(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
 			TweenLite.to(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .3, yoyo: true, repeat: 8, ease: Linear.easeNone, rotation: "+=11" });
 		} });
-	tl.from(["._lemon-main"], { duration: .4, scale: 0, ease: Back.easeOut });
+	tl.from(["._lemon-main"], { duration: .4, scale: 0, ease: "custom" });
+
+	tl.to(".t1", { duration: .2, opacity: 0, ease: Power3.easeOut }, 4);
+	tl.from(".t2", { duration: .65, scale: 1.5, opacity: 0, ease: "custom" });
 
 	tl.from(".cta", { duration: .3, opacity: 0, ease: Power3.easeOut }, "+=.3");
 
@@ -43,6 +46,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 gsap.defaults({
 	ease: "power4.out"
 });
+
+CustomEase.create("custom", "M0,0 C0.14,0 0.234,0.438 0.264,0.561 0.305,0.728 0.4,1.172 0.55,1.172 0.652,1.172 0.722,1.102 0.77,1.024 0.834,0.93 0.89,0.946 0.916,0.946 0.952,0.946 1,1 1,1 ");
 
 var w = size.w;
 var h = size.h;
