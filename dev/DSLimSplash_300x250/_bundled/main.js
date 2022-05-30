@@ -14,7 +14,7 @@ function start() {
 	tl.from(".t1", { duration: .65, scale: 1.5, opacity: 0, ease: Back.easeIn });
 
 	tl.from(".bg", { duration: .4, opacity: 0, ease: Power3.easeIn });
-	tl.from(".hand", { duration: .3, x: "+=130", ease: Power3.easeOut });
+	// tl.from(".hand", {duration:.3, x:"+=130", ease:Power3.easeOut})
 	tl.from(".cta", { duration: .3, opacity: 0, ease: Power3.easeOut }, "-=.3");
 
 	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
