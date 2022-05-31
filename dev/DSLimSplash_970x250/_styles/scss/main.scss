@@ -1,0 +1,63 @@
+@import '../../../_common/styles/common.scss';
+
+#banner{
+ width: 970px;
+ height: 250px;
+}
+
+
+
+.scale{
+	transform-origin: 50% 50%;
+}
+
+
+
+
+.t2{
+	@include pos-scale(-151, 34, .5);
+}
+
+
+
+
+._swirl{
+	@include pos-scale(17, -37, .5);
+}
+
+._swirl2{
+	@include pos-scale(707, 0, .5);
+}
+
+
+._lime{
+	@include pos-scale(37, -2, .5);
+}
+
+._lime2{
+	@include pos-scale(850, 65, .5);
+}
+
+._lime3{
+	@include pos-scale(886, 177, .5);
+}
+
+
+._lemon{
+	@include pos-scale(-6, 64, .5);
+}
+
+._lemon2{
+	@include pos-scale(814, 159, .5);
+}
+
+._lemon3{
+	@include pos-scale(684, 28, .5);
+}
+
+
+
+._lemon-ring{
+	@include pos-scale(861, 121, .5);
+}
+
