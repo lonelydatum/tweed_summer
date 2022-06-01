@@ -12,27 +12,22 @@ CustomEase.create("custom", "M0,0 C0.14,0 0.234,0.438 0.264,0.561 0.305,0.728 0.
 const {w, h} = size
 
 
+const looper = {duration:.3, yoyo:true, repeat:15, ease:Linear.easeNone, rotation:"+=20"}
 
+function samo(){
+	const tl = new TimelineMax()
+	tl.set(".frame1", {opacity:1})
+	tl.from(".bg", {duration:.4, opacity:0, ease:Power3.easeIn})
+	return tl
+}
 
-
+function ender(tl){
+	tl.to(".t1", {duration:.2,  opacity:0, ease:Power3.easeOut}, 4.3)
+	tl.from(".t2", {duration:.5, scale:1.5, opacity:0, ease:"custom"})
+}
 
 function init(){
-	
-	const tl = new TimelineMax({onComplete:()=>{
-		
-	}})
-
-	const looper = {duration:.3, yoyo:true, repeat:15, ease:Linear.easeNone, rotation:"+=16"}
-
-	tl.set(".frame1", {opacity:1})
-	
-	
-	
-
-
-	tl.from(".bg", {duration:.4, opacity:0, ease:Power3.easeIn})
-	
-
+	const tl = samo()
 	tl.from(["._swirl", "._lime-bottom", "._lime-top"], {duration:.4, scale:0, ease:"custom", onComplete:()=>{
 		console.log('lkj');
 		TweenLite.to(["._swirl", "._lime-bottom", "._lime-top"], looper)
@@ -43,17 +38,21 @@ function init(){
 
 	}})
 
-	tl.from(["._lemon-main"], {duration:.4, scale:0, ease:"custom"})
-	
-	tl.to(".t1", {duration:.2,  opacity:0, ease:Power3.easeOut}, 4.3)
-	tl.from(".t2", {duration:.65, scale:1.5, opacity:0, ease:"custom"})
-	
-	
+	tl.from(["._lemon-main"], {duration:.4, scale:0, ease:"custom"})	
+	ender(tl)
+}
 
 
-
+function mango(){
+	const tl = samo()
+	tl.from(".wiggle", {duration:.4, scale:0, ease:"custom", onComplete:()=>{		
+		TweenLite.to(".wiggle", looper)
+	}})
+	
+	tl.from([".fruit-main"], {duration:.4, scale:0, ease:"custom"})	
+	ender(tl)
 }
 
 
 
-export {size, init}
+export {size, init, mango}

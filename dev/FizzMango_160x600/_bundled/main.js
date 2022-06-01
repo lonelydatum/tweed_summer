@@ -3,7 +3,7 @@
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-(0, _commonJsCommonJs.init)();
+(0, _commonJsCommonJs.mango)();
 
 module.exports = {};
 
