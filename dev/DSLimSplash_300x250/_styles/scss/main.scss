@@ -5,31 +5,16 @@
  height: 250px;
 }
 
-#olg{
-	width: 136px;
-	height: 69px;
-	@include pos(0, 188);
-}
-
 .scale{
 	transform-origin: 50% 50%;
 }
 
-#legalBtn{	
-	@include pos(150, 204);	
-	width: 80px;
-	// opacity: 1;
-
-}
 
 
 .t2{
 	@include pos-scale(-36, 8, .5);
 }
 
-.t1{
-	@include pos-scale(-66, -38, .5);
-}
 
 
 

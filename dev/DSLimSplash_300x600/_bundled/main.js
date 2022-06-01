@@ -1,10 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-(0, _commonJsCommonJs.init)();
-
+(0, _commonJsCommonJs.init)([".wiggle1", ".wiggle2"]);
 module.exports = {};
 
 },{"../../_common/js/common.js":2}],2:[function(require,module,exports){
@@ -27,10 +26,20 @@ var h = size.h;
 
 var looper = { duration: .3, yoyo: true, repeat: 15, ease: Linear.easeNone, rotation: "+=20" };
 
-function samo() {
+function starter() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 	tl.from(".bg", { duration: .4, opacity: 0, ease: Power3.easeIn });
+	return tl;
+}
+
+function wiggle(list) {
+	var tl = new TimelineMax();
+	list.map(function (a) {
+		tl.from(a, { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
+				TweenLite.to(a, looper);
+			} });
+	});
 	return tl;
 }
 
@@ -39,33 +48,36 @@ function ender(tl) {
 	tl.from(".t2", { duration: .5, scale: 1.5, opacity: 0, ease: "custom" });
 }
 
-function init() {
-	var tl = samo();
-	tl.from(["._swirl", "._lime-bottom", "._lime-top"], { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
-			console.log('lkj');
-			TweenLite.to(["._swirl", "._lime-bottom", "._lime-top"], looper);
-		} });
-	tl.from(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
-			TweenLite.to(["._lemon-top", "._lemon-ring", "._lemon-right", "._lemon-left"], looper);
-		} });
-
-	tl.from(["._lemon-main"], { duration: .4, scale: 0, ease: "custom" });
+function init(list) {
+	var tl = starter();
+	wiggle(list);
+	tl.from([".fruit-main"], { duration: .4, scale: 0, ease: "custom" });
 	ender(tl);
 }
 
 function mango() {
-	var tl = samo();
-	tl.from(".wiggle", { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
-			TweenLite.to(".wiggle", looper);
-		} });
+	var tl = starter();
+	tl.add(wiggle([".wiggle"]));
 
 	tl.from([".fruit-main"], { duration: .4, scale: 0, ease: "custom" });
+	ender(tl);
+}
+
+function tweed(wiggle) {
+	var tl = starter();
+	wiggle.map(function (a) {
+		tl.from(a, { duration: .4, scale: 0, ease: "custom", onComplete: function onComplete() {
+				TweenLite.to(a, looper);
+			} });
+	});
 	ender(tl);
 }
 
 exports.size = size;
 exports.init = init;
 exports.mango = mango;
+exports.tweed = tweed;
+exports.looper = looper;
 
 },{}]},{},[1])
 

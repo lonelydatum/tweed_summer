@@ -6,12 +6,16 @@
 }
 
 
-
+.frame1{
+	opacity: 1
+}
 .scale{
 	transform-origin: 50% 50%;
 }
 
-
+.fruit-main{
+	@include pos-scale(643, -18, .5);
+}
 
 
 .t2{

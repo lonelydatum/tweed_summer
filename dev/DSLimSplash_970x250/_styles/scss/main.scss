@@ -5,14 +5,18 @@
  height: 250px;
 }
 
-
+.frame1{
+	// opacity: 1;
+}
 
 .scale{
 	transform-origin: 50% 50%;
 }
 
 
-
+.fruit-main{
+	@include pos-scale(573, -42, .5);
+}
 
 .t2{
 	@include pos-scale(-151, 34, .5);

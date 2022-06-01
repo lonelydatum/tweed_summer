@@ -1,17 +1,4 @@
-
-
-
 import {init} from '../../_common/js/common.js'
-
-
-
-
-
-
-
-init()
-
-
-
+init([".wiggle1", ".wiggle2"])
 module.exports = {};
 

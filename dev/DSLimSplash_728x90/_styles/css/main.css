@@ -218,10 +218,25 @@ canvas, .text, .frame, .outline, img {
   height: 90px;
 }
 
+.frame1 {
+  opacity: 1;
+}
+
 .scale {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+
+.fruit-main {
+  -webkit-transform: translate(643px, -18px) scale(0.5, 0.5);
+  -ms-transform: translate(643px, -18px) scale(0.5, 0.5);
+  transform: translate(643px, -18px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .t2 {
