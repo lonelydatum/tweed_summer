@@ -1,7 +1,7 @@
 @import '../../../_common/styles/common.scss';
 
 #banner{
- width: 160px;
+ width: 300px;
  height: 600px;
  background-color: #fdf7e6;
 }
@@ -18,31 +18,31 @@
 
 
 .t2{
-	@include pos-scale(-41, -4, .5);
+	@include pos-scale(-9, -34, .5);
 }
 
 
 
 .fruit-12{
-	@include pos-scale(45, 213, .5);
+	@include pos-scale(99, 194, .5);
 }
 
 .fruit-03{
-	@include pos-scale(117, 281, .5);
+	@include pos-scale(187, 281, .5);
 }
 
 .fruit-04{
-	@include pos-scale(106, 366, .5);
+	@include pos-scale(171, 384, .5);
 }
 
 .fruit-07{
-	@include pos-scale(-56, 386, .5);
+	@include pos-scale(-25, 411, .5);
 }
 
 .fruit-09{
-	@include pos-scale(-18, 290, .5);
+	@include pos-scale(20, 290, .5);
 }
 
 .fruit-main{
-	@include pos-scale(-38, 156, .5);
+	@include pos-scale(-19, 156, .5);
 }
