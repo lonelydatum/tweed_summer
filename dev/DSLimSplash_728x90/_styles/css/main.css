@@ -209,8 +209,8 @@ canvas, .text, .frame, .outline, img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 4%, transparent 52%);
 }
 
-#olg {
-  opacity: 0;
+.star {
+  z-index: 10;
 }
 
 #banner {
