@@ -43,3 +43,7 @@
 ._lemon-main{
 	@include pos-scale(6, 160, .5);
 }
+
+.star{
+	@include pos-scale(40, 522, .5);	
+}

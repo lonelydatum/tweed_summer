@@ -5,7 +5,9 @@
  height: 600px;
 }
 
-
+.frame{
+	// opacity: 1;
+}
 
 .scale{
 	transform-origin: 50% 50%;
@@ -42,4 +44,9 @@
 }
 ._lemon-main{
 	@include pos-scale(-15, 161, .5);
+}
+
+.star{
+	@include pos-scale(0, 475, .5);
+	
 }

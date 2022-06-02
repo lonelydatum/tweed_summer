@@ -312,4 +312,15 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
+.star {
+  -webkit-transform: translate(160px, 179px) scale(0.5, 0.5);
+  -ms-transform: translate(160px, 179px) scale(0.5, 0.5);
+  transform: translate(160px, 179px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 /*# sourceMappingURL=main.css.map */
