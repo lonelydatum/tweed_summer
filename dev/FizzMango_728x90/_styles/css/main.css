@@ -237,9 +237,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .fruit-12 {
-  -webkit-transform: translate(582px, 10px) scale(0.5, 0.5);
-  -ms-transform: translate(582px, 10px) scale(0.5, 0.5);
-  transform: translate(582px, 10px) scale(0.5, 0.5);
+  -webkit-transform: translate(590px, 10px) scale(0.5, 0.5);
+  -ms-transform: translate(590px, 10px) scale(0.5, 0.5);
+  transform: translate(590px, 10px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -248,9 +248,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .fruit-03 {
-  -webkit-transform: translate(635px, 5px) scale(0.5, 0.5);
-  -ms-transform: translate(635px, 5px) scale(0.5, 0.5);
-  transform: translate(635px, 5px) scale(0.5, 0.5);
+  -webkit-transform: translate(644px, 5px) scale(0.5, 0.5);
+  -ms-transform: translate(644px, 5px) scale(0.5, 0.5);
+  transform: translate(644px, 5px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -259,9 +259,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .fruit-04 {
-  -webkit-transform: translate(628px, 39px) scale(0.5, 0.5);
-  -ms-transform: translate(628px, 39px) scale(0.5, 0.5);
-  transform: translate(628px, 39px) scale(0.5, 0.5);
+  -webkit-transform: translate(637px, 39px) scale(0.5, 0.5);
+  -ms-transform: translate(637px, 39px) scale(0.5, 0.5);
+  transform: translate(637px, 39px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -270,9 +270,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .fruit-06 {
-  -webkit-transform: translate(568px, 49px) scale(0.5, 0.5);
-  -ms-transform: translate(568px, 49px) scale(0.5, 0.5);
-  transform: translate(568px, 49px) scale(0.5, 0.5);
+  -webkit-transform: translate(576px, 49px) scale(0.5, 0.5);
+  -ms-transform: translate(576px, 49px) scale(0.5, 0.5);
+  transform: translate(576px, 49px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
