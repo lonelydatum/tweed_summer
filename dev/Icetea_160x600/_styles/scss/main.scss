@@ -1,0 +1,42 @@
+@import '../../../_common/styles/common.scss';
+
+#banner{
+ width: 160px;
+ height: 600px;
+ background-color: #fdf7e6;
+}
+
+.frame{
+	// opacity: 1;
+}
+
+.scale{
+	transform-origin: 50% 50%;
+}
+
+
+
+
+.t2{
+	@include pos-scale(-68, -9, .5);
+}
+
+
+
+.fruit-03{
+	@include pos-scale(114, 259, .5);
+}
+
+.fruit-06{
+	@include pos-scale(106, 363, .5);
+}
+
+.fruit-09{
+	@include pos-scale(-3, 267, .5);
+}
+
+
+
+.fruit-main{
+	@include pos-scale(-16, 156, .5);
+}

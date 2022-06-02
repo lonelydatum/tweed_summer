@@ -219,10 +219,6 @@ canvas, .text, .frame, .outline, img {
   background-color: #fdf7e6;
 }
 
-.frame {
-  opacity: 1;
-}
-
 .scale {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;

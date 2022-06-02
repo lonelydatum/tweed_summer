@@ -58,6 +58,7 @@ function mango(){
 
 
 function tweed(wiggle){
+	
 	const tl = starter()
 	wiggle.map(a=>{
 		tl.from(a, {duration:.4, scale:0, ease:"custom", onComplete:()=>{		
