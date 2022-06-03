@@ -15,12 +15,14 @@
 
 
 .t2{
-	@include pos-scale(-34, 0, .5);
+	@include pos-scale(-16, 4, .5);
 }
 
 
 
-
+.frame1{
+	// opacity: 1;
+}
 
 
 ._lime{
@@ -32,4 +34,8 @@
 }
 ._lemon-ring{
 	@include pos-scale(297, -6, .5);
+}
+
+.fruit-main{
+	@include pos-scale(190, -16, .5);
 }

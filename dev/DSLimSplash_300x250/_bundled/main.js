@@ -54,6 +54,7 @@ function init(list) {
 	wiggle(list);
 	tl.from([".fruit-main"], { duration: .4, scale: 0, ease: "custom" });
 	ender(tl);
+	return tl;
 }
 
 function mango() {

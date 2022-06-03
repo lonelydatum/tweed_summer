@@ -3,7 +3,9 @@
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-(0, _commonJsCommonJs.init)([".wiggle1"]);
+var tl = (0, _commonJsCommonJs.init)([".wiggle1"]);
+// tl.to(".logo", {duration:.2, opacity:0}, "-=.3")
+// tl.from(".fruit-main", {duration:.2, opacity:0})
 module.exports = {};
 
 },{"../../_common/js/common.js":2}],2:[function(require,module,exports){
@@ -53,6 +55,7 @@ function init(list) {
 	wiggle(list);
 	tl.from([".fruit-main"], { duration: .4, scale: 0, ease: "custom" });
 	ender(tl);
+	return tl;
 }
 
 function mango() {

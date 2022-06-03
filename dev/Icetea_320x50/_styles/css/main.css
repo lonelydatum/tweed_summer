@@ -226,9 +226,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .t2 {
-  -webkit-transform: translate(-34px, -1px) scale(0.5, 0.5);
-  -ms-transform: translate(-34px, -1px) scale(0.5, 0.5);
-  transform: translate(-34px, -1px) scale(0.5, 0.5);
+  -webkit-transform: translate(-24px, -10px) scale(0.5, 0.5);
+  -ms-transform: translate(-24px, -10px) scale(0.5, 0.5);
+  transform: translate(-24px, -10px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -236,10 +236,10 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
-.fruit-03 {
-  -webkit-transform: translate(300px, -7px) scale(0.5, 0.5);
-  -ms-transform: translate(300px, -7px) scale(0.5, 0.5);
-  transform: translate(300px, -7px) scale(0.5, 0.5);
+.fruit1 {
+  -webkit-transform: translate(221px, -7px) scale(0.5, 0.5);
+  -ms-transform: translate(221px, -7px) scale(0.5, 0.5);
+  transform: translate(221px, -7px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -247,10 +247,21 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
-.fruit-09 {
-  -webkit-transform: translate(216px, -10px) scale(0.5, 0.5);
-  -ms-transform: translate(216px, -10px) scale(0.5, 0.5);
-  transform: translate(216px, -10px) scale(0.5, 0.5);
+.fruit2 {
+  -webkit-transform: translate(297px, 13px) scale(0.5, 0.5);
+  -ms-transform: translate(297px, 13px) scale(0.5, 0.5);
+  transform: translate(297px, 13px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.fruit-main {
+  -webkit-transform: translate(191px, -16px) scale(0.5, 0.5);
+  -ms-transform: translate(191px, -16px) scale(0.5, 0.5);
+  transform: translate(191px, -16px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
